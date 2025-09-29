@@ -1,0 +1,55 @@
+@use "./variables.scss" as vars;
+
+.product-thumbnail {
+  display: flex;
+  align-items: center;
+  background: vars.$background;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  transition: border 0.25s, background 0.2s, box-shadow 0.3s,
+    transform 0.4s cubic-bezier(0.4, 0.3, 0.2, 1.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+
+  /* Hover (lift effect) */
+  &:hover {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(75, 129, 232, 0.1);
+    border: 2px solid vars.$primary-color;
+  }
+
+  &.active,
+  &:focus {
+    border: 2px solid vars.$primary-color;
+    background: vars.$active-bg;
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 4px 14px rgba(75, 129, 232, 0.13);
+  }
+
+  .thumbnail-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-right: 8px;
+    transition: filter 0.3s;
+    &:hover,
+    .active & {
+      filter: brightness(1.15);
+    }
+  }
+
+  .thumbnail-title {
+    font-size: 1rem;
+    margin-right: 8px;
+    color: vars.$text;
+    flex: 1;
+  }
+
+  .thumbnail-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+}

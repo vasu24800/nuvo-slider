@@ -1,0 +1,24 @@
+@use "./variables.scss" as vars;
+
+.chevron-btn {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.3s, box-shadow 0.3s;
+
+  svg {
+    transition: transform 0.3s cubic-bezier(0.58, 0.28, 0.87, 0.53), fill 0.3s;
+  }
+
+  &.active {
+    background: vars.$primary-color;
+    box-shadow: 0 2px 8px rgba(75, 129, 232, 0.15);
+
+    svg {
+      transform: rotate(90deg) scale(1.2);
+      stroke: #fff;
+      fill: #fff;
+    }
+  }
+}
