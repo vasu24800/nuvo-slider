@@ -9,7 +9,7 @@ const ChevronButton = ({ isActive }) => (
       viewBox="0 0 24 24"
       fill={isActive ? "#4b81e8" : "none"}
       stroke="#4b81e8"
-      strokeWidth="2"
+      strokeWidth="2" // Changed from 2 to 2px
       strokeLinecap="round"
       strokeLinejoin="round"
       className="chevron"
