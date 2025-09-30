@@ -1,16 +1,41 @@
-# React + Vite
+# Nuvolum Product Slider
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive product slider built from scratch in React and SCSS as part of the Nuvolum Frontend Developer challenge.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Live API data**: Products are fetched from [FakeStore API](https://fakestoreapi.com/products?limit=5).
+- **Animated thumbnails**: Smooth, staggered-in animations and auto-scroll to selected.
+- **Clean transitions**: Product details fade and scale in.
+- **Chevron button animation**: Rotates and fills when active.
+- **Responsive design**: Optimized layouts for desktop, tablet, and mobile.
+- **Accessibility**: Keyboard navigation, clear focus states, alt tags.
+- **SEO-friendly**: All product content is present in the DOM at all times.
+- **From scratch**: No UI libraries, just React + SCSS.
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> (https://nuvo-slider.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Getting Started
+
+1. **Clone the repo**
+    git clone 
+    cd nuvolum-slider
+2. **Install dependencies**
+    npm install
+3. **Start the development server**
+    npm run dev
+
+## 🧑‍💻 Tech Stack
+
+- React
+- Vite
+- SCSS (Sass)
+- JavaScript (ES6+)
+- FakeStore API
+
+    
+   
